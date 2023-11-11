@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1 {
+  font-family: var(--font-boxing-regular);
+}
+
+body {
+  font-family: var(--font-excon);
+  background: #eeeff0;
+  height: 100%;
+  width: 100%;
+}
