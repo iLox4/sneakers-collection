@@ -6,7 +6,7 @@
 
 .inputWrapper svg {
   position: absolute;
-  z-index: 100;
+  z-index: 10;
   left: 16px;
   top: 12px;
 }
