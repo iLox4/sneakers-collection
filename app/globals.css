@@ -8,15 +8,23 @@
   box-sizing: border-box;
 }
 
+*,
+*:after,
+*::before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
 :root {
-  --Focus: #20A9F3;
+  --Focus: #20a9f3;
   --Hover: #373737;
-  --White: #FFF;
+  --White: #fff;
   --Gray-50: #808080;
-  --Gray-80: #CCC;
-  --bg: #EEEFF0;
+  --Gray-80: #ccc;
+  --bg: #eeeff0;
   --Black: #191919;
-  --Red: #EF233C;
+  --Red: #ef233c;
 }
 
 h1 {

@@ -1,0 +1,55 @@
+.inputWrapper {
+  display: flex;
+  position: relative;
+  margin-right: 16px;
+}
+
+.inputWrapper svg {
+  position: absolute;
+  z-index: 100;
+  left: 16px;
+  top: 12px;
+}
+
+.inputWrapper svg path {
+  fill: var(--Gray-80);
+}
+
+.input {
+  padding: 12px 16px;
+  color: var(--Black);
+  background: var(--White);
+  border: 1px solid var(--Gray-80);
+  border-radius: 8px;
+}
+
+.input::placeholder {
+  color: var(--Gray-80);
+}
+
+.input:hover {
+  border-color: var(--Hover);
+}
+
+.input:hover::placeholder,
+.input:active::placeholder {
+  color: var(--Gray-50);
+}
+
+.input:focus {
+  border-color: transparent;
+  outline: 2px solid var(--Black);
+}
+
+.input:active {
+  border-color: transparent;
+  outline: 2px solid var(--Focus);
+}
+
+.inputError {
+  border: 1px solid var(--Red);
+}
+
+.inputIcon {
+  padding-left: 48px;
+}

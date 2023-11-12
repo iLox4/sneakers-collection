@@ -1,0 +1,7 @@
+.searchBar {
+  display: flex;
+  background-image: url("../../../public/normal-icons/search.svg");
+  background-repeat: no-repeat;
+  background-position: left center;
+  outline: 0;
+}
