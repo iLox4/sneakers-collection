@@ -8,13 +8,24 @@
   box-sizing: border-box;
 }
 
+:root {
+  --Focus: #20A9F3;
+  --Hover: #373737;
+  --White: #FFF;
+  --Gray-50: #808080;
+  --Gray-80: #CCC;
+  --bg: #EEEFF0;
+  --Black: #191919;
+  --Red: #EF233C;
+}
+
 h1 {
   font-family: var(--font-boxing-regular);
 }
 
 body {
   font-family: var(--font-excon);
-  background: #eeeff0;
+  background: var(--bg);
   height: 100%;
   width: 100%;
 }

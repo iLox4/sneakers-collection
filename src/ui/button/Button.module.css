@@ -1,0 +1,80 @@
+.btn {
+  display: flex;
+  border-style: hidden;
+  border-radius: 12px;
+  text-align: center;
+  background-color: var(--Black);
+  color: var(--White);
+}
+
+.btn svg path {
+  fill: var(--White);
+}
+
+.btn:hover {
+  background-color: var(--Hover);
+}
+
+.secondary {
+  background: transparent;
+  border: 1px solid var(--Black);
+  color: var(--Black);
+}
+
+.secondary svg path {
+  fill: var(--Black);
+}
+
+.btn:focus,
+.secondary:focus {
+  outline: solid 2px var(--Focus);
+}
+
+.btn:disabled {
+  background: var(--Gray-80);
+  color: var(--Gray-50);
+}
+
+.btn:disabled svg path {
+  fill: var(--Gray-50);
+}
+
+.btn:active {
+  background: var(--Red);
+  color: var(--White);
+}
+
+.secondary:disabled {
+  color: var(--Gray-50);
+  border-color: var(--Gray-50);
+}
+
+.secondary:disabled svg path {
+  fill: var(--Gray-50);
+}
+
+.secondary:active {
+  border-style: hidden;
+  background: var(--Red);
+  color: var(--White);
+}
+
+.secondary:active svg path {
+  fill: var(--Red);
+}
+
+.large {
+  padding: 12px 32px;
+}
+
+.small {
+  padding: 6px 12px;
+}
+
+.iconLeft svg {
+  margin-right: 8px;
+}
+
+.iconRight svg {
+  margin-left: 8px;
+}
