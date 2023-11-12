@@ -1,0 +1,17 @@
+.collectionHeader {
+  margin: 56px 100px 58px 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.collectionHeader h1 {
+  font-size: 64px;
+  display: flexbox;
+}
+
+.collectionHeaderActions {
+  display: flex;
+  vertical-align: middle;
+  align-items: center;
+}
