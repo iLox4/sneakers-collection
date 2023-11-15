@@ -1,28 +1,39 @@
 "use client";
 
-import { useState } from "react";
+import { Dispatch, useState } from "react";
 
 import Button from "@/src/ui/button/Button";
 import SearchBar from "@/src/ui/search-bar/SearchBar";
 import PlusIcon from "@/src/ui/icons/icons-24px/PlusIcon";
-import Modal from "@/src/ui/modal/Modal";
+import CreateForm from "../forms/create-form/CreateForm";
 
 import styles from "./CollectionHeader.module.css";
 
-export default function CollectionHeader() {
+export default function CollectionHeader({
+  setSearchQ,
+  searchQ,
+}: {
+  setSearchQ: Dispatch<string>;
+  searchQ: string;
+}) {
   const [isPopupVisible, setPopupVisibility] = useState(false);
+
+  const handleChangeSearchQ = (event: any) => {
+    setSearchQ(event.target.value);
+  };
 
   return (
     <>
       {isPopupVisible && (
-        <Modal closeModal={() => setPopupVisibility(false)}>
-          <h3>Add Sneakers</h3>
-        </Modal>
+        <CreateForm
+          handleCloseModal={() => setPopupVisibility(false)}
+          isOpen={isPopupVisible}
+        />
       )}
       <header className={styles.collectionHeader}>
         <h1>Your collection</h1>
         <div className={styles.collectionHeaderActions}>
-          <SearchBar />
+          <SearchBar handleChange={handleChangeSearchQ} searchValue={searchQ} />
           <Button
             onClick={() => setPopupVisibility(true)}
             isIcon={true}
@@ -31,6 +42,7 @@ export default function CollectionHeader() {
             iconPosition={"left"}
             size={"large"}
             label={"Add new sneakers"}
+            isActive={false}
           />
         </div>
       </header>

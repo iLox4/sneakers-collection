@@ -6,12 +6,56 @@
 }
 
 .collectionHeader h1 {
-  font-size: 64px;
   display: flexbox;
+  display: -ms-flexbox;
 }
 
 .collectionHeaderActions {
   display: flex;
   vertical-align: middle;
   align-items: center;
+}
+
+.collectionHeaderActions button {
+  max-width: 235px;
+}
+
+@media screen and (max-width: 450px) {
+  .collectionHeader {
+    margin: 84px 23px 0px 23px;
+    flex-direction: column;
+    gap: 16px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .collectionHeader h1 {
+    width: 100%;
+    font-size: 36px;
+    line-height: 100%;
+    font-weight: 400;
+  }
+
+  .collectionHeaderActions {
+    display: block;
+    width: 100%;
+    align-items: center;
+  }
+
+  .collectionHeader button {
+    width: 100%;
+    position: fixed;
+    bottom: 56px;
+    left: 22px;
+    z-index: 30;
+    max-width: 88%;
+  }
+
+  .collectionHeaderActions input {
+    margin-bottom: 16px;
+    max-width: 100%;
+    width: calc(100% - 44px);
+  }
+
 }
