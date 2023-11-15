@@ -21,6 +21,7 @@
   background: var(--White);
   border: 1px solid var(--Gray-80);
   border-radius: 8px;
+  width: 100%;
 }
 
 .input::placeholder {
@@ -52,4 +53,21 @@
 
 .inputIcon {
   padding-left: 48px;
+}
+
+.inputLabel {
+  font-size: 14px;
+  color: var(--Gray-50);
+  line-height: 16px;
+  margin-bottom: 4px;
+}
+
+.alert {
+  border-color: var(--Red);
+}
+
+.alertMessage {
+  font-size: 14px;
+  line-height: 16px;
+  color: var(--Red);
 }
