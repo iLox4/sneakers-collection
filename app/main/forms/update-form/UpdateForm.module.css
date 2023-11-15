@@ -1,0 +1,29 @@
+.formHeader {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.formHeader h2 {
+  display: flexbox;
+  margin-right: 8px;
+}
+
+.formHeader svg {
+  cursor: pointer;
+}
+
+.formInputs {
+  width: 100%;
+  margin: 48px 0px;
+}
+
+.formInputNormal {
+  margin-bottom: 24px;
+}
+
+.formActions {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
