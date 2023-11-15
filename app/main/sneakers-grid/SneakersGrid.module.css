@@ -1,0 +1,58 @@
+.gridActionsWrapper {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 24px;
+  margin-bottom: 16px;
+}
+
+.gridActions {
+  display: flex;
+  gap: 8px;
+}
+
+.grid {
+  display: grid;
+  display: -ms-grid;
+  display: -moz-grid;
+  gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+}
+
+.noSneakersFound {
+  text-align: center;
+}
+
+.noSneakersFound svg {
+  margin: auto;
+}
+
+.noSneakersFound p {
+  margin-top: 48px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+@media screen and (max-width: 450px) {
+    .gridActionsWrapper > span {
+        display: none;
+    }
+
+    .noSneakersFound svg {
+        width: 386px;
+    }
+}
+
+@media screen and (min-width: 750px) {
+    .grid {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+@media screen and (min-width: 1700px) {
+    .grid {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
