@@ -3,6 +3,7 @@
   width: 100%;
   height: 100%;
   position: absolute;
+  overflow-y: hidden;
   top: 0;
   left: 0;
   background-color: var(--Black);
@@ -13,6 +14,7 @@
   position: fixed;
   z-index: 100;
   height: 100%;
+  overflow-y: auto;
   padding: 72px 48px;
   background-color: var(--White);
   width: 524px;
@@ -23,6 +25,9 @@
 @media screen and (max-width: 450px) {
   .modal {
     width: 90%;
-    padding-bottom: 100px;
+  }
+
+  .background {
+    position: fixed;
   }
 }

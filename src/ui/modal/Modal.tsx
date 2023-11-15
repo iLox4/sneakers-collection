@@ -13,9 +13,9 @@ export default function Modal({
   isOpen: boolean;
 }) {
   useEffect(() => {
-    document.body.style.overflow = "hidden";
+    document.body.style.position = "fixed";
     return (): void => {
-      document.body.style.overflow = "unset";
+      document.body.style.position = "relative";
     };
   }, [isOpen]);
 

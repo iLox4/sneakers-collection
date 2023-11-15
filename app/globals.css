@@ -29,6 +29,12 @@
   --Red: #ef233c;
 }
 
+html,
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
 h1 {
   font-family: var(--font-boxing-regular);
   font-size: 64px;
