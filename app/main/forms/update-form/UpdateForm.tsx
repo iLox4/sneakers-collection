@@ -14,7 +14,6 @@ import styles from "./UpdateForm.module.css";
 export default function UpdateForm({
   handleCloseModal,
   sneakersData,
-  isOpen,
 }: {
   handleCloseModal: () => void;
   sneakersData: {
@@ -26,7 +25,6 @@ export default function UpdateForm({
     size: number;
     price: number;
   };
-  isOpen: boolean;
 }) {
   const { id, name, brand, rating, year, size, price } = sneakersData;
 
@@ -103,7 +101,7 @@ export default function UpdateForm({
   }
 
   return (
-    <Modal closeModal={handleCloseModal} isOpen={isOpen}>
+    <Modal closeModal={handleCloseModal}>
       <form onSubmit={handleSubmit}>
         <div className={styles.formHeader}>
           <h2>{name}</h2>

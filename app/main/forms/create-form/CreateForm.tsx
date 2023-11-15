@@ -14,10 +14,8 @@ import styles from "./CreateForm.module.css";
 
 export default function CreateForm({
   handleCloseModal,
-  isOpen,
 }: {
   handleCloseModal: () => void;
-  isOpen: boolean;
 }) {
   const [nameVal, setName] = useState<string>("");
   const [brandVal, setBrand] = useState<string>("");
@@ -85,7 +83,7 @@ export default function CreateForm({
   }
 
   return (
-    <Modal closeModal={handleCloseModal} isOpen={isOpen}>
+    <Modal closeModal={handleCloseModal}>
       <form onSubmit={handleSubmit}>
         <div className={styles.formHeader}>
           <h2>
