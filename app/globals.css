@@ -6,6 +6,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font: var(--font-excon);
 }
 
 *,
@@ -14,6 +15,7 @@
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
+  -webkit-text-size-adjust: auto;
 }
 
 :root {
@@ -29,6 +31,39 @@
 
 h1 {
   font-family: var(--font-boxing-regular);
+  font-size: 64px;
+  color: var(--Black);
+  line-height: 100%;
+}
+
+h2 {
+  font-family: var(--font-boxing-regular);
+  font-size: 36px;
+  color: var(--Black);
+  line-height: 100%;
+}
+
+h3 {
+  font-family: var(--font-excon);
+  font-size: 24px;
+  color: var(--Black);
+  font-weight: 700;
+  line-height: 34px;
+}
+
+h4 {
+  font-family: var(--font-excon);
+  font-size: 16px;
+  color: var(--Black);
+  font-weight: 700;
+  line-height: 24px;
+}
+
+button {
+  font-family: var(--font-excon);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
 }
 
 body {
