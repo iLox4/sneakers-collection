@@ -3,8 +3,11 @@
   border-style: hidden;
   border-radius: 12px;
   text-align: center;
+  justify-content: center;
+  align-items: center;
   background-color: var(--Black);
   color: var(--White);
+  width: 100%;
 }
 
 .btn svg path {
@@ -41,7 +44,17 @@
 
 .btn:active {
   background: var(--Red);
-  color: var(--White);
+  color: transparent;
+}
+
+.secondary:hover {
+  background-color: transparent;
+  border-color: var(--Hover);
+  color: var(--Hover);
+}
+
+.secondary:hover svg path {
+  fill: var(--Hover);
 }
 
 .secondary:disabled {
@@ -54,13 +67,13 @@
 }
 
 .secondary:active {
-  border-style: hidden;
+  border-color: transparent;
   background: var(--Red);
   color: var(--White);
 }
 
 .secondary:active svg path {
-  fill: var(--Red);
+  fill: var(--White);
 }
 
 .large {
@@ -69,12 +82,35 @@
 
 .small {
   padding: 6px 12px;
+  width: fit-content;
 }
 
-.iconLeft svg {
+.iconLeft span {
+  margin-left: 8px;
+}
+
+.iconRight span {
   margin-right: 8px;
 }
 
-.iconRight svg {
-  margin-left: 8px;
+.active {
+  background-color: var(--Red);
+  color: var(--White);
+  border-color: transparent;
+}
+
+.active svg path {
+  fill: var(--White);
+}
+
+.active:hover,
+.active:active {
+  background-color: transparent;
+  color: var(--Red);
+  border-color: var(--Red); 
+}
+
+.active:hover svg path,
+.active:active svg path {
+  fill: var(--Red);
 }

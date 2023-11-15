@@ -1,4 +1,4 @@
-import { MouseEventHandler, ReactElement } from "react";
+import { ReactElement } from "react";
 import styles from "./Button.module.css";
 
 export default function Button({
@@ -9,14 +9,16 @@ export default function Button({
   iconPosition,
   size,
   label,
+  isActive,
 }: {
-  onClick: MouseEventHandler;
+  onClick: (param: any) => void;
   type: "primary" | "secondary";
   Icon: () => ReactElement;
   isIcon: boolean;
   iconPosition: "left" | "right" | null;
   size: "large" | "small";
   label: string;
+  isActive: boolean;
 }) {
   let buttonContent;
   let btnStyles = `${styles.btn}`;
@@ -27,7 +29,7 @@ export default function Button({
       buttonContent = (
         <>
           <Icon />
-          {label}
+          <span>{label}</span>
         </>
       );
     } else if (iconPosition === "right") {
@@ -35,7 +37,7 @@ export default function Button({
       buttonContent = (
         <>
           <Icon />
-          {label}
+          <span>{label}</span>
         </>
       );
     }
@@ -51,6 +53,10 @@ export default function Button({
     btnStyles += ` ${styles.small}`;
   } else {
     btnStyles += ` ${styles.large}`;
+  }
+
+  if (isActive) {
+    btnStyles += ` ${styles.active}`;
   }
 
   return (
