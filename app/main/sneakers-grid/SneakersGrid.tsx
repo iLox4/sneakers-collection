@@ -156,6 +156,7 @@ export default function SneakersGrid({
         <UpdateForm
           handleCloseModal={handleCloseModal}
           sneakersData={formData}
+          isOpen={!!formData.id}
         />
       )}
       {content}

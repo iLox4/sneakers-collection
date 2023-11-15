@@ -27,6 +27,7 @@ export default function CollectionHeader({
       {isPopupVisible && (
         <CreateForm
           handleCloseModal={() => setPopupVisibility(false)}
+          isOpen={isPopupVisible}
         />
       )}
       <header className={styles.collectionHeader}>

@@ -23,5 +23,6 @@
 @media screen and (max-width: 450px) {
   .modal {
     width: 90%;
+    padding-bottom: 100px;
   }
 }
