@@ -1,0 +1,27 @@
+.rating {
+  display: flex;
+}
+
+.inputLabel {
+  font-size: 14px;
+  color: var(--Gray-50);
+  line-height: 16px;
+  margin-bottom: 4px;
+}
+
+.starInput {
+  display: flex;
+  margin-right: 8px;
+}
+
+.starInput svg {
+  cursor: pointer;
+}
+
+.starInput svg:hover path {
+  fill: var(--Hover);
+}
+
+.starInput input[type="radio"] {
+  display: none;
+}
