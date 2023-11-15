@@ -1,0 +1,21 @@
+.noSneakersInfo {
+  margin-top: 48px;
+}
+
+.collectionMain {
+  margin-left: 100px;
+  margin-right: 100px;
+  text-align: center;
+}
+
+.collectionMain svg {
+  margin: auto;
+}
+
+@media screen and (max-width: 450px) {
+  .collectionMain {
+    margin-left: 22px;
+    margin-right: 22px;
+    text-align: center;
+  }
+}
